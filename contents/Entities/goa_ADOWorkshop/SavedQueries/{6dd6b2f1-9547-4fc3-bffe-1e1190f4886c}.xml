@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6dd6b2f1-9547-4fc3-bffe-1e1190f4886c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="goa_name" select="1" icon="1" preview="1">
+        <row name="result" id="goa_adoworkshopid">
+          <cell name="goa_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="goa_adoworkshop">
+          <attribute name="goa_adoworkshopid" />
+          <attribute name="goa_name" />
+          <attribute name="createdon" />
+          <order attribute="goa_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="goa_name" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active ADOWorkshops" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_goa_adoworkshop" />
+  <EntityRelationship Name="lk_goa_adoworkshop_createdby" />
+  <EntityRelationship Name="lk_goa_adoworkshop_modifiedby" />
+  <EntityRelationship Name="owner_goa_adoworkshop" />
+  <EntityRelationship Name="team_goa_adoworkshop" />
+  <EntityRelationship Name="user_goa_adoworkshop" />
+</EntityRelationships>
